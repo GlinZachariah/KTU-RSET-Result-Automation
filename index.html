@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSET KTU Result Checker</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<center><h1>RSET KTU Result Automation</h1>
+	<hr>
+	<div>
+		<h3 style="">Please upload the result PDF</h3><br>
+		<div id="my-div">
+			<iframe src="https://document.online-convert.com/convert-to-txt" id="my-iframe" scrolling="no"></iframe>	</div>
+	</div>
+	<hr>
+	<div>
+	<h3>Please Enter the Branch and Grade.Then upload the result.txt </h3><br>
+	Branch :
+
+	<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Select</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <a href="#" onclick="funcBranch('CS')" name="CS">CS</a>
+    <a href="#" onclick="funcBranch('AE')" name="AE">AE</a>
+    <a href="#" onclick="funcBranch('EC')" name="EC">EC</a>
+    <a href="#" onclick="funcBranch('EE')" name="EE">EE</a>
+    <a href="#" onclick="funcBranch('IT')" name="IT">IT</a>
+    <a href="#" onclick="funcBranch('ME')" name="ME">ME</a>
+  </div>
+</div>
+
+	<br><br>
+	<label id="branchname" ></label>
+	<br><br>
+	Grade:
+
+<div class="dropdown">
+  <button onclick="myFunction2()" class="dropbtn">Select</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <a href="#" onclick="funcGrade('\\(0\\)')" name="0">O</a>
+    <a href="#" onclick="funcGrade('\\(A\\+\\)')" name="A+">A+</a>
+    <a href="#" onclick="funcGrade('\\(A\\)')" name="A">A</a>
+    <a href="#" onclick="funcGrade('\\(B\\+\\)')" name="B+">B+</a>
+    <a href="#" onclick="funcGrade('\\(B\\)')" name="B">B</a>
+    <a href="#" onclick="funcGrade('\\(C\\)')" name="C">C</a>
+    <a href="#" onclick="funcGrade('\\(P\\)')" name="P">P</a>
+    <a href="#" onclick="funcGrade('\\(F\\)')" name="F">F</a>
+    <a href="#" onclick="funcGrade('\\(FE\\)')" name="FE">FE</a>
+    <a href="#" onclick="funcGrade('\\(Absent\\)')" name="Absent">Absent</a>
+  </div>
+</div>
+
+	<br><br>
+	<label id="gradename" ></label>
+	<br><br>
+	
+	
+	</div>
+	<input type="file" id="fileinput" /><br><br>
+	<a href="#" id="down">Download Result.csv</a><br>
+	<textarea type="text" id="output" style=" "></textarea>
+</div>
+	</center>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
